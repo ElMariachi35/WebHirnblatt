@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="styles/gamestyles.css">
+
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
+	<script type="text/javascript" src="js/Global.js"></script>
+	<script type="text/javascript" src="js/plugins/jquery.titlealert.js"></script>
+	
+	<script>
+		var g = new Global();
+		
+		var hasFocus=true;
+		
+		function onBlur() {
+			hasFocus=false;
+		};
+		
+		function onFocus(){
+			hasFocus=true;
+		};
+
+		if (/*@cc_on!@*/false) { // check for Internet Explorer
+			document.onfocusin = onFocus;
+			document.onfocusout = onBlur;
+		} else {
+			window.onfocus = onFocus;
+			window.onblur = onBlur;
+		}
+		
+	</script>
+	
+<!-- 	<script type="text/javascript" src="js/modulePattern.js"></script>
+	<script type="text/javascript" src="js/Enums.js"></script>
+	<script type="text/javascript" src="js/Card.js"></script>
+	<script type="text/javascript" src="js/Deck.js"></script>
+	<script type="text/javascript" src="js/Player.js"></script>
+	<script type="text/javascript" src="js/Round.js"></script>
+	<script type="text/javascript" src="js/PlayerMathematica.js"></script>
+	<script type="text/javascript" src="js/Connection.js"></script>
+	<script type="text/javascript" src="js/Controller.js"></script> -->
+
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<div id="gameMain">
+				<div id="player1" class="player1">
+					<div id="p1Controls">
+						<div class="controls-text" id="p1Name">Gerald</div>
+						<div class="controls-text">gesagt:</div>
+						<div id="p1TricksMelded" class="controls-output-text-fields">0</div>
+						<div class="controls-text">gemacht:</div>
+						<div id="p1TricksMade" class="controls-output-text-fields">0</div>
+						
+					</div>	
+					<div id="p1Cards">
+						<img src="hb_images/b1fv.png" id="p1c1" onclick="m.sendCardToServer('1')">
+						<img src="hb_images/b1fv.png" id="p1c2" onclick="m.sendCardToServer('2')">
+						<img src="hb_images/b1fv.png" id="p1c3" onclick="m.sendCardToServer('3')">
+						<img src="hb_images/b1fv.png" id="p1c4" onclick="m.sendCardToServer('4')">
+						<img src="hb_images/b1fv.png" id="p1c5" onclick="m.sendCardToServer('5')">
+						<img src="hb_images/b1fv.png" id="p1c6" onclick="m.sendCardToServer('6')">
+						<img src="hb_images/b1fv.png" id="p1c7" onclick="m.sendCardToServer('7')">
+						<img src="hb_images/b1fv.png" id="p1c8" onclick="m.sendCardToServer('8')">
+					</div>
+				</div>
+				<div id="player2" class="player-vertical">
+					<div id="p2Controls" class="controls-computerPlayer">
+						<div class="controls-text" id="p2Name"></div>
+						<div class="controls-text">gesagt:</div>
+						<div id="p2TricksMelded" class="controls-output-text-fields"></div>
+						<div class="controls-text">gemacht:</div>
+						<div id="p2TricksMade" class="controls-output-text-fields"></div>
+					</div>
+				</div>
+				<div id="player3" class="player-horizontal">
+					<div id="p3Controls" class="controls-computerPlayer">
+						<div class="controls-text" id="p3Name">Gerald</div>
+						<div class="controls-text">gesagt:</div>
+						<div id="p3TricksMelded" class="controls-output-text-fields">1</div>
+						<div class="controls-text">gemacht:</div>
+						<div id="p3TricksMade" class="controls-output-text-fields">1</div>
+					</div>
+				</div>
+				<div id="player4" class="player-vertical">
+					<div id="p4Controls" class="controls-computerPlayer">
+						<div class="controls-text" id="p4Name"></div>
+						<div class="controls-text">gesagt:</div>
+						<div id="p4TricksMelded" class="controls-output-text-fields"></div>
+						<div class="controls-text">gemacht:</div>
+						<div id="p4TricksMade" class="controls-output-text-fields"></div>
+					</div>
+				</div>
+				<div id="center1">
+					<img src="hb_images/b1fv.png" id="p3CenterCard">
+					<img src="hb_images/b1fv.png" id="p2CenterCard">
+					<img src="hb_images/b1fv.png" id="p4CenterCard">
+					<img src="hb_images/b1fv.png" id="p1CenterCard">
+				</div>
+				
+				<img id="p1DealerButton" src="hb_images/dealerButton.png">
+				<img id="p2DealerButton" src="hb_images/dealerButton.png">
+				<img id="p3DealerButton" src="hb_images/dealerButton.png">
+				<img id="p4DealerButton" src="hb_images/dealerButton.png">
+				
+				<div id="meldTricksDiv">
+					<img id="meldTricksImg0" class="meldTricksImg" src="hb_images/0.png" onclick="c.meldTricks(0)">
+					<img id="meldTricksImg1" class="meldTricksImg" src="hb_images/1.png" onclick="c.meldTricks(1)">
+					<img id="meldTricksImg2" class="meldTricksImg" src="hb_images/2.png" onclick="c.meldTricks(2)">
+					<img id="meldTricksImg3" class="meldTricksImg" src="hb_images/3.png" onclick="c.meldTricks(3)">
+					<img id="meldTricksImg4" class="meldTricksImg" src="hb_images/4.png" onclick="c.meldTricks(4)">
+					<img id="meldTricksImg5" class="meldTricksImg" src="hb_images/5.png" onclick="c.meldTricks(5)">
+					<img id="meldTricksImg6" class="meldTricksImg" src="hb_images/6.png" onclick="c.meldTricks(6)">
+					<img id="meldTricksImg7" class="meldTricksImg" src="hb_images/7.png" onclick="c.meldTricks(7)">
+					<img id="meldTricksImg8" class="meldTricksImg" src="hb_images/8.png" onclick="c.meldTricks(8)">
+				</div>
+				
+			</div>
+			
+				<script>
+					$('#p1TricksMelded').html("0");
+					
+		
+				</script>
+</body>
+</html>

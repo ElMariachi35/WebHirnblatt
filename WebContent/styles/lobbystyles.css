@@ -1,0 +1,167 @@
+
+.lobbyMain {
+    border: 0 solid black;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 800px;
+    min-height: 1000px;
+}
+.lobbyBorder {
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 950px;
+    min-height: 1000px;
+}
+#playerListContainer {
+    border: 0 solid black;
+    float: left;
+    height: 250px;
+    padding-left: 7px;
+    width: 175px;
+}
+#playerList {
+    height: 218px;
+    padding-left: 4px;
+    width: 161px;
+}
+.playerListItem {
+    font-size: 14px;
+}
+#header {
+    border: 0 solid black;
+    float: right;
+    height: 100px;
+    right: 0;
+    top: 0;
+    width: 616px;
+}
+#gameList {
+    float: right;
+    height: 483px;
+    margin-right: 7px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    width: 596px;
+}
+#lobbyChat {
+    bottom: 0;
+    height: 218px;
+    margin-bottom: 4px;
+    margin-left: 7px;
+    margin-top: 235px;
+    padding-left: 4px;
+    width: 161px;
+}
+#lobbyLogo {
+    border: 0 solid black;
+    float: left;
+    height: 100px;
+    width: 180px;
+    background-image:url(../img/logo_small.png);
+}
+#id {
+    display: none;
+}
+#usernameHeader {
+	margin-top: 29px;
+    float: right;
+    margin-right: -69px;
+}
+#buttonHeader {
+    float: right;
+    margin-right: 7px;
+    margin-top: 7px;
+}
+#newGameButton {
+    float: right;
+    margin-top: 35px;
+}
+#logoutButton {
+    float: right;
+}
+.lobbyElement {
+    background-color: #87c595 ;
+    border: 5px solid white;
+}
+#lobbyChatContainer {
+    height: 265px;
+    width: 175px;
+}
+#gameListContainer {
+    margin-top: 13px;
+}
+#marginGameListHeader {
+    margin-left: 8px;
+}
+#lobbyChatButton {
+    float: right;
+    margin-right: -7px;
+    width: 64px;
+}
+#lobbyChatInput {
+    margin-left: 7px;
+    width: 102px;
+}
+.gameListElement {
+    background-color: white;
+    border: 1px solid #458f56;
+    color: #87c595 ;
+    height: 100px;
+    margin: 6px;
+    width: 566px;
+}
+.gameListElementHeader {
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 2px;
+}
+.gameListElementName {
+    float: left;
+    font-weight: bold;
+}
+.gameListElementId {
+    float: right;
+    font-size: 10px;
+}
+.gameListElementPlayer {
+    border: 0 solid white;
+    margin-top: 25px;
+}
+.gameListElementPlayerElement1 {
+    margin-left: 57px;
+    margin-top: 25px;
+}
+.gameListElementPlayerElement2 {
+    margin-left: 57px;
+    margin-top: 10px;
+}
+.gameListElementPlayerElement3 {
+    margin-left: 270px;
+    margin-top: -49px;
+}
+.gecko .gameListElementPlayerElement4 {
+    margin-left: 270px;
+    margin-top: 10px;
+}
+
+.webkit .gameListElementPlayerElement4 {
+    margin-left: 270px;
+    margin-top: 10px;
+    margin-bottom: -12px;
+}
+
+.gameListElementStartButton {
+    margin-left: 410px;
+    width: 73px;
+}
+.gameListElementEndButton {
+    width: 73px;
+}
+.gameListElementJoinButton {
+    margin-left: 480px;
+    width: 81px;
+}
+
+

@@ -1,0 +1,40 @@
+html, body{
+font-family: 'Trebuchet MS';
+color: white;
+height: 100%
+}
+
+
+.bgLightBlue {
+    /*background-color: #D9F4FF;*/
+	background-color: #65D2FF;
+	
+}
+
+input[type="button"] {
+    background-color: #99E1FF;
+    border:  2px solid white;
+    color: white;
+    font-weight: bold;
+}
+
+input[type="submit"] {
+    background-color: #99E1FF;
+    border:  2px solid white;
+    color: white;
+    font-weight: bold;
+}
+
+input[type="text"]:focus
+ { 
+	background-color:white;
+	border: 1px solid #99e1ff;
+ }
+ 
+ input[type="text"] {
+    background-color: #99E1FF;
+    border: 1px solid white;
+    margin-left: 8px;
+    margin-top: 0;
+    width: 200px;
+	color: #01B5FF ;

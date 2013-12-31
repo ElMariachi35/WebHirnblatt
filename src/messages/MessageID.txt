@@ -1,0 +1,67 @@
+Client to Server
+
+1  : register User on Server 						["1", "Username"]
+1.5: start game 							["1.5"]
+2  : confirm reception of name 						["2", userId]
+3  : confirm reception of dealerCards 					["3", userId]
+4  : confirm reception of dealer 					["4", userId]
+5  : confirm reception of cards 					["5", userId]
+6  : confirm reception of meldedTricks of some player 			["6", userId]
+7  : send meldedTricks to Server 					["7", userId, nrOfTricks]
+8  : confirm reception of card 						["8", userId]
+9  : send played card to server 					["9", userId, cardId]
+10 : confirm end of miniround 						["10", userId]
+11 : confirm end of round 						["11", userId]
+12 : confirm reception of round results 				["12", userId]
+
+60 : send chat message to server 					["60", userId, message]
+
+
+
+
+Server to Client
+
+a  : submit unique Client-/UserId to Client 				["a", "uniqeID"] 
+b  : inform client that game has started 				["b", List<User>]
+c  : send card and player Id to Client					["c", userId, card] 
+d  : send dealer to Client 						["d", userId]
+e1 : send card and playerId to Client (1 card round)			["e1", userId, Map<String, Card>]
+eX : send cards and player Id to Client					["eX", userId, ArrayList<Card]
+f  : send request for melding tricks to one player			["f", userId, nrOfCards]
+g  : send nrOfTricks of player to client				["g", userId, nrOfTricks]
+h  : send request for playing a card to one player			["h", userId]
+i  : send played card to all clients					["i", userId, card]
+j  : send userId of player who took trick				["j", userId]
+k  : send endOfRound to clients						["k", userId, nrOfTricks]
+l  : send result of round to clients					["l", gameResult, nrOfCards]
+
+
+z  : send to client that game has ended					["z", reason]
+mm : send chat message to clients					["mm", userId, message]
+
+
+
+
+
+
+Lobby messages
+  Server to Client
+	100: server update list of online users					["100", ArrayList<String>]
+	110: server opens new game								["110", gameId, playerNames[], playerId[]]
+	115: server informs clients user has joined/left a game	["115", gameId, playerNames[], playerId[], userId]
+	130: server closes a game on request of user			["130", gameId]
+	149: game is starting, remove game-Object in Lobby		["149", gameId] 					
+      
+  Client to Server
+	200: client tries to authenticate on server  			["200", UID]
+	210: client tries to open a new game					["210", UID]
+	220: client tries to join a game						["220", gameId, UID]
+	221: client tries to leave a game (in the lobby)		["221", gameId, UID]
+	230: client tries to close a game (in the lobby)		["230", gameId, UID]
+	250: client tries to start a game						["250", gameId, UID]
+
+
+
+
+
+

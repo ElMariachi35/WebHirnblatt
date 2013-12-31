@@ -1,0 +1,227 @@
+
+.overlay {
+    background-color: #000000;
+    height: 100%;
+    left: 0;
+    opacity: 0.5;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10000;
+}
+#gameMain {
+    border: 5px solid;
+    font-size: 14px;
+    height: 650px;
+    margin-left: 269px;
+    margin-top: -800px;
+    position: absolute;
+    width: 1100px;
+    z-index: 10500;
+}
+#endGameButton {
+    height: 17px;
+    margin-left: 1078px;
+    margin-top: -5px;
+    position: absolute;
+    text-align: center;
+    width: 17px;
+}
+#p1Cards {
+    padding-top: 3px;
+}
+#player1 {
+    border: 0 solid;
+    margin-left: 56px;
+    margin-top: 545px;
+    position: absolute;
+    width: 750px;
+}
+#p1Controls {
+    float: left;
+    height: 100px;
+    margin-right: 10px;
+    width: 130px;
+}
+#player2 {
+    height: 100px;
+    margin-left: -5px;
+    margin-top: 290px;
+    position: absolute;
+    width: 130px;
+}
+#player3 {
+    height: 100px;
+    margin-left: 485px;
+    margin-top: -5px;
+    position: absolute;
+    width: 130px;
+}
+#player4 {
+    height: 100px;
+    margin-left: 965px;
+    margin-top: 290px;
+    position: absolute;
+    width: 130px;
+}
+.controls-name {
+    font-weight: bold;
+    text-align: center;
+}
+.controls-output-text-fields {
+    border: 1px solid;
+    font-weight: bold;
+    height: 16px;
+    margin-left: 15px;
+    text-align: center;
+    vertical-align: middle;
+    width: 21px;
+}
+.controls-text {
+    margin-left: 5px;
+}
+#center {
+    height: 225px;
+    margin-left: 400px;
+    margin-top: 213px;
+    position: absolute;
+    width: 300px;
+}
+#p1CenterCard {
+    left: 115px;
+    position: absolute;
+    top: 129px;
+}
+#p2CenterCard {
+    left: 0;
+    position: absolute;
+    top: 64px;
+}
+#p3CenterCard {
+    left: 115px;
+    position: absolute;
+    top: 0;
+}
+#p4CenterCard {
+    left: 229px;
+    position: absolute;
+    top: 64px;
+}
+#p1DealerButton {
+    left: 535px;
+    position: absolute;
+    top: 465px;
+}
+#p2DealerButton {
+    left: 250px;
+    position: absolute;
+    top: 320px;
+}
+#p3DealerButton {
+    left: 535px;
+    position: absolute;
+    top: 140px;
+}
+#p4DealerButton {
+    left: 820px;
+    position: absolute;
+    top: 320px;
+}
+#meldTricksDiv {
+    margin-left: 300px;
+    margin-top: 508px;
+    width: 400px;
+    position: absolute;
+}
+.meldTricksImg {
+    padding-left: 10px;
+}
+#chatContainer {
+    border: 0 solid black;
+    height: 117px;
+    margin-left: 830px;
+    margin-top: 528px;
+    position: absolute;
+    width: 252px;
+}
+#chatWindow {
+    background-color: white;
+    border: 1px solid lightgray;
+    height: 86px;
+    overflow: auto;
+    width: 250px;
+}
+#chat {
+    border: 0 solid lightblue;
+    margin: 4px;
+    overflow: auto;
+}
+#chatInput {
+    margin-top: 4px;
+}
+#chatTextField {
+    width: 154px;
+}
+.glowing-border {
+	background-color: #0088c0;
+}
+
+.glowing-border-player1{
+/* 	border-top-color: #0088c0;
+	border-right-color: #0088c0;
+	border-left-color: #0088c0; */
+	/* border-color: #9ecaed; */
+    box-shadow: 0 0 20px #005274;
+}
+.glowing-border-player2{
+/* 	border-top-color: #0088c0;
+	border-right-color: #0088c0;
+	border-bottom-color: #0088c0; */
+	box-shadow: 0 0 20px #005274;
+}
+.glowing-border-player3{
+/* 	border-right-color: #0088c0;
+	border-bottom-color: #0088c0;
+	border-left-color: #0088c0; */
+	box-shadow: 0 0 20px #005274;
+}
+.glowing-border-player4{
+/* 	border-top-color: #0088c0;
+	border-bottom-color: #0088c0;
+	border-left-color: #0088c0; */
+	box-shadow: 0 0 20px #005274;
+}
+
+
+/*RESULTS */
+#results{
+	position:absolute;
+	font-size: 11px;
+	margin-top: 5px;
+	margin-left: 7px;	
+}
+
+table {
+border:none;
+border-collapse: collapse;
+}
+
+table td,th {
+    border-left: 1px solid #ffffff;
+    border-right: 1px solid #ffffff;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: center;
+}
+
+table td:first-child, th:first-child {
+border-left: none;
+}
+
+table td:last-child, th:last-child {
+border-right: none;
+}
+
+caption {
+	font-weight: bold;
+}
